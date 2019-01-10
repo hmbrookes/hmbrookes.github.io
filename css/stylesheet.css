@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	background: #a5d0d3;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.lognav{
+	float: right;	
+}
+
+.navbar{
+	background: #4a8a8e;
+	height: 59px;
+}
+
+.navbar > a{
+	float:left;
+}
+
+.navbar a{
+	text-decoration:none;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+.navbar a:hover{
+	background: #6bbabf;	
+}
+
+.slideshow{
+	height: 500px;
+	width: 100%;
+}
+
+#map{
+	height: 500px;	
+}
+
+.footer{
+	height: 200px;
+	background: #383b3f;
+}
