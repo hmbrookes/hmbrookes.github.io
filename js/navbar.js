@@ -1,9 +1,10 @@
-var myNav = document.getElementById('navbar');
+
 window.onscroll = function () { 
-    "use strict";
+	"use strict";
+	var myNav = document.getElementById('navbar');
     if (document.body.scrollTop >= 200 ) {
-        myNav.classList.toggle("nav-colored");
-    } else{
+        myNav.classList.add("nav-colored");
+    }else{
 		myNav.classList.remove("nav-colored");
 	}
 };
