@@ -1,14 +1,12 @@
-$(document).ready(function(){
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-    
-    if (scrollTop >= 100) {
-      $('.navbar').addClass('scrolled-nav');
-    } else if (scrollTop < 100) {
-      $('.navbar').removeClass('scrolled-nav');
+var myNav = document.getElementById('navbar');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
     } 
-    
-  }); 
-  
-});
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
