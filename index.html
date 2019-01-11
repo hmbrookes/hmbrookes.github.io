@@ -1,17 +1,20 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>BikeShare</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet"> 
-  </head>
-  <body>
-  	<div class="navbar">
+
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BikeShare</title>
+	<meta name="author" content="name">
+	<meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+</head>
+
+<body>
+	<div class="navbar">
 		<a class="activenav" href="">Home</a>
 		<a href="">Hire</a>
 		<a href="">About</a>
@@ -20,72 +23,79 @@
 			<a class="lognav" href="">Login</a>
 		</div>
 	</div>
-	  
-	  
-	  <div class="slideshow">
-		  <p>Slideshow Test</p>
-	  </div>
-	  
-	  
-	 <script>
-					function myMap() {
-						var myMarkerLoc = {lat: 55.9107555, lng: -3.3175649};
-						var myMarker2Loc = {lat: 55.932655, lng: -3.0744477};
-						var myMarker3Loc = {lat: 55.9421746,lng: -3.2715189};
-						var myCenter = {lat: 55.9530282, lng: -3.1956276};
-						
-						
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: myCenter,
-        });
+ <div class="overlay">
+  <div class="slideshow">
+  <!-- Full-width images with number and caption text -->
+  <div class="slides fadein">
+    <img src="img/cycedin2.jpg" style="width:100%">
+  </div>
 
-        var marker = new google.maps.Marker({
-          position: myMarkerLoc,
-          map: map,
-          title: 'Heriot Watt University'
-        });
-		
-		var marker2 = new google.maps.Marker({
-          position: myMarker2Loc,
-          map: map,
-          title: 'Queen Margaret University'
-        });
-						
-		var marker3 = new google.maps.Marker({
-          position: myMarker3Loc,
-          map: map,
-          title: 'Edinburgh Zoo'
-        });
+  <div class="slides fadein">
+    <img src="img/cycedin1.jpg" style="width:100%">
+  </div>
 
-        marker.addListener('click', function() {
-          map.setZoom(14);
-          map.setCenter(marker.getPosition());
-			window.alert("Heriot Watt University");
-        });	
-						
-		marker2.addListener('click', function() {
-          map.setZoom(14);
-          map.setCenter(marker2.getPosition());
-			window.alert("Queen Margaret University");
-        });	
-						
-		marker3.addListener('click', function() {
-          map.setZoom(14);
-          map.setCenter(marker3.getPosition());
-			window.alert("Edinburgh Zoo");
-        });	
+  <div class="slides fadein">
+    <img src="img/edin3.jpg" style="width:100%">
+  </div>
+	
+</div>
+</div>
+	<p class="text">Easy to hire Bikes with BikeShare</p>
+	
+	<script src="js/slideshow.js"></script>
 
-					}
-				</script>
-				
-				<div id="map" style="width:100%; height:400px; max-width:100%; margin:auto;"></div>
-				
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClwGcC8uXvulxmvs_3GhG5vVT-4m6RwXI&callback=myMap"></script>
-	  
-	  			<div class="footer"></div>
+	<script>
+		function myMap() {
+			var myMarkerLoc = {lat: 55.9107555, lng: -3.3175649};
+			var myMarker2Loc = {lat: 55.932655, lng: -3.0744477};
+			var myMarker3Loc = {lat: 55.9421746,lng: -3.2715189};
+			var myCenter = {lat: 55.9530282, lng: -3.1956276};
+			var map = new google.maps.Map(document.getElementById('map'), {
+      	zoom: 11,
+        center: myCenter,
+      });
+      var marker = new google.maps.Marker({
+        position: myMarkerLoc,
+        map: map,
+        title: 'Heriot Watt University'
+      });
+			var marker2 = new google.maps.Marker({
+        position: myMarker2Loc,
+        map: map,
+        title: 'Queen Margaret University'
+      });
+			var marker3 = new google.maps.Marker({
+        position: myMarker3Loc,
+        map: map,
+        title: 'Edinburgh Zoo'
+      });
+      marker.addListener('click', function() {
+      	map.setZoom(14);
+      	map.setCenter(marker.getPosition());
+				window.alert("Heriot Watt University");
+      });
+			marker2.addListener('click', function() {
+        map.setZoom(14);
+        map.setCenter(marker2.getPosition());
+				window.alert("Queen Margaret University");
+      });
+			marker3.addListener('click', function() {
+        map.setZoom(14);
+        map.setCenter(marker3.getPosition());
+				window.alert("Edinburgh Zoo");
+      });
+		}
+	</script>
+	<div id="mapCont">
+		<div id="map" style="width:100%; height: 100%; margin:auto;"></div>
+	</div>
 
-	  
-  </body>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClwGcC8uXvulxmvs_3GhG5vVT-4m6RwXI&callback=myMap"></script>
+	
+	<div class="footer"></div>
+
+
+</body>
+
 </html>

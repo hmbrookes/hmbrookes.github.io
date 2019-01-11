@@ -2,16 +2,13 @@ body{
 	margin: 0;
 	background: #a5d0d3;
 	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 18px;
 }
 
 .lognav{
-	float: right;	
+	float: right;
 }
 
-.navbar{
-	background: #4a8a8e;
-	height: 59px;
-}
 
 .navbar > a{
 	float:left;
@@ -19,25 +16,80 @@ body{
 
 .navbar a{
 	text-decoration:none;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	color: white;
 }
 
 .navbar a:hover{
-	background: #6bbabf;	
+	background: #6bbabf;
 }
 
 .slideshow{
-	height: 500px;
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+	z-index: -1;
+	top: -60px;
+}
+
+.overlay{
+	z-index:2;
+	background-color:rgba(54, 84, 147, 0.5);
 	width: 100%;
 }
 
-#map{
-	height: 500px;	
+.slides{
+	display:none;
+	height: 500px;
+	z-index: 1;
+}
+
+.text {
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.fadein {
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fadein {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#mapCont{
+	height: 600px;
+	width: 100%;
 }
 
 .footer{
 	height: 200px;
 	background: #383b3f;
+}
+
+@media (max-width: 1000px) {
+	.footer, .slideshow{
+		height: 0;
+	}
+	#mapCont{
+		bottom: 0;
+		height: 100%;
+		position: absolute;
+	}
 }
