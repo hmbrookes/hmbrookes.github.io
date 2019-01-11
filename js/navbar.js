@@ -1,10 +1,9 @@
+window.onscroll = function() {myFunction()};
 
-window.onscroll = function () { 
-	"use strict";
-	var myNav = document.getElementById('navbar');
-    if (document.body.scrollTop >= 200 ) {
-        myNav.classList.add("nav-colored");
-    }else{
-		myNav.classList.remove("nav-colored");
-	}
-};
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").className = "nav-transparent";
+  } else {
+    document.getElementById("navbar").className = "";
+  }
+}
