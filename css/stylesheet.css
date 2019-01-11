@@ -10,7 +10,10 @@ body{
 }
 
 .navbar{
-	position:fixed;
+	height: 59px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 }
 
 
