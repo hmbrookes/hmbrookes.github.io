@@ -9,6 +9,10 @@ body{
 	float: right;
 }
 
+.navbar{
+	position:fixed;
+}
+
 
 .navbar > a{
 	float:left;
