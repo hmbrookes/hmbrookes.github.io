@@ -114,6 +114,10 @@ body{
 	width: 100%;
 }
 
+.formRL{
+	padding-top: 70px;
+}
+
 .footer{
 	height: 200px;
 	background: #383b3f;
@@ -132,7 +136,8 @@ body{
 		height: 100%;
 		position: absolute;
 	}
-	.activenav{
+	
+	#navbar{
 		visibility: hidden;
 	}
 }
