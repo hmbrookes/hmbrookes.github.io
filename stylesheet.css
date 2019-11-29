@@ -1,0 +1,265 @@
+body, html {
+    height: 100%;
+	margin: 0;
+	font-family: 'Barlow', sans-serif;
+	background-color: #1c5c66;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('dragonbuild.png');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2{
+	background-image: url('spleefhubrender.png');
+}
+
+.main{
+	position: fixed;
+    top: 0;
+    width: 100%;
+	opacity: 0.8;
+}
+
+.main ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.main li img{
+	height:50px;
+	width: 50px;
+	padding: 20px;
+	float:left;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+.main li p{
+	float: left;
+	font-size: 30px;
+	margin-top: 25px;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+.main li:last-child{
+	border-right:none;
+}
+
+.main li a{
+	float:right;
+	font-size:20px;
+	display: block;
+	text-align: center;
+	padding: 30px 26px;
+	text-decoration: none;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+.main li a:not(.active){
+	color:black;
+}
+
+.main li a:hover{
+	color: #bd9ace;
+}
+
+.mobilenav{
+	text-align: center;
+}
+
+.mobilenav p{
+	font-size: 20px;
+	margin-top: 0;
+	padding-top: 12px;
+	text-align: left;
+}
+
+.mobilenav img{
+	height:30px;
+	width: 30px;
+	padding: 10px;
+	float:left;
+}
+
+.mobilenav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.mobilenav li a{
+	display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.mobilenav li a:hover{
+	background-color: #555;
+    color: white;
+}
+
+.active{
+	color:#ffffff;
+}
+
+.mainarea{
+	background-color: #1c5c66;
+	padding-top: 100px;
+	display: block;
+	box-sizing: border-box;
+	
+}
+
+.parallax #maintext{
+	position: absolute;
+	margin-top: 22%;
+	margin-right: 20px;
+	margin-left: 66%;
+	font-size: 30px;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+.parallax #subtext{
+	position: absolute;
+	margin-top: 22%;
+	margin-right: 20px;
+	margin-left: 66%;
+	padding-top: 40px;
+	font-size: 25px;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+#textarea{
+	text-align:center;
+}
+
+#textarea p{
+	color: white;
+	padding-top: 30px;
+	margin:auto;
+    line-height:50px;
+    vertical-align:middle;
+}
+
+#textabout{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#mtext{
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border-radius: 5px;
+	background-color: #548e80;
+}
+
+.footer{
+	display: block;
+	height: 100px;
+	background-color: #1c5c66;
+}
+#copyr ul{
+	list-style-type: none;
+	float:left;
+}
+
+#copyr li{
+	font-size:20px;
+	padding-top: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.social{
+	margin-right: 20px;
+}
+
+.social ul{
+	list-style-type: none;
+	float:left;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.social li{
+	text-decoration: none;
+	float: left;
+	padding-top: 25px;
+}
+
+#twitter{
+	height:50px;
+	width: 50px;
+	background-image: url("twitter.png");
+}
+
+#facebook{
+	height:50px;
+	width: 50px;
+	background-image: url("facebook-box.png");
+}
+
+#pmc{
+	height:50px;
+	width: 50px;
+	background-image: url("earth.png");
+}
+
+.row{
+	padding-left: 15px;
+}
+
+.row > .column {
+  padding: 0 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width:32%;
+}
+
+.column > img{
+	width:100%;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+

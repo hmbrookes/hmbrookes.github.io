@@ -1,0 +1,98 @@
+@media screen and (max-width: 1490px) {
+
+
+
+.parallax #maintext{
+	font-size: 25px;
+}
+
+.parallax #subtext{
+	font-size: 20px;
+}
+
+#textabout{
+		padding-top: 10px;
+}
+
+#mtext{
+		height: 930px;
+}
+
+}
+
+
+@media screen and (max-width: 1250px) {
+    
+.parallax #maintext{
+	font-size: 20px;
+}
+
+.parallax #subtext{
+	font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 1020px) {
+  
+.parallax #maintext{
+	display:none;
+}
+
+.parallax #subtext{
+	display: none;
+}
+
+}
+
+@Media screen and (max-width: 720px) {
+    
+	#protitle{
+		font-size:40px;
+	}
+	
+	#prosub{
+		font-size:25px;
+	}
+	
+	#textabout{
+		padding-top: 10px;
+	}
+	
+	#mtext{
+		height: 930px;
+	}
+	
+	#copyr{
+		display:none;
+	}
+	
+	.main{
+		display:none;
+	}
+
+}
+
+@Media screen and (min-width: 720px) {
+    
+	#protitle{
+		font-size:72px;
+	}
+	
+	#prosub{
+		font-size:35px;
+	}
+	
+	#textabout{
+		padding-top: 90px;
+	}
+	
+	#mtext{
+		height: 850px;
+	}
+	
+	.mobilenav{
+		display:none;
+	}
+
+}
